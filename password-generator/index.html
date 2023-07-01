@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Genrator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Generate Strong Password
+            </h1>
+            <input 
+            type="text"
+            placeholder="click the button to generate password"
+            id="display-password"
+            />
+            <div class="generate-container">
+                <select name="passwordLength" id="password-length">
+                    <option value="0" selected disabled>Select Length</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                    <option value="30">300</option>
+                </select>
+                <button onClick="randomPassword()">Generate Password</button>
+            </div>
+            <p id="error-info"></p>
+        </div>
+    </body>
+</html>
