@@ -1,51 +1,93 @@
-* {
-    margin:0;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
     padding: 0;
-    font-family: 'Segoe UI';
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    margin: 20px auto;
-    color: white;
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51, 112, 203);
 }
 
-body {
-    height: 100vh;
-    width: 100%;
-    background-image: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.wrapper{
+     position: relative;
+     max-width: 400px;
+     width: 200%;
+     background: white;
+     border-radius: 12px;
+     padding: 30px 25px;
+}
+
+.wrapper .password-box{
     position: relative;
+    height: 100px;
 }
 
-.container {
-    width: 60;
-    margin: auto;
+.password-box input{
+    height: 80%;
+    width: 100%;
+    border-radius: 8px;
+    padding: o 45px 0 15px;
+    border: 1px solid #aaa;
+    text-align: center;
+    background-color: transparent;
+}
+
+.password-box .copy-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+
+.copy-icon:hover{
+    color: rgb(51, 112, 203);
+}
+
+.wrapper .range-box{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
 }
 
-#display-password {
-    padding: 10px;
-    text-align: start;
-    font-size: large;
+.range-box input{
+    width: 100%;
+    height: 10px;
+    accent-color: rgb(51, 112, 203);
+
 }
 
-#error-info {
-    color: red;
-    font-weight: bold;
-    background-color: white;
-    margin: auto;
+.range-box .slider-number{
+    min-width: 30px;
+    text-align: right;
+    font-size: 17px;
+    color: rgb(51, 112, 203);
 }
+ .wrapper .generate-button{
+    width: 100%;
+    color: white;
+    padding: 12px 0;
+    margin-top: 20px;
+    background-color: rgb(51, 112, 203);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all o.2s ease;
+ }
 
-.generate-container {
-    display: flex;
-    justify-content: space-between;
-}
+ .generate-button:hover{
+    background-color: rgb(72, 72, 204);
 
-.generate-container * {
-    width: 48%;
-    padding: 5px;
-    font-size: 16px;
-}
+ }  

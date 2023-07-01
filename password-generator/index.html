@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Password Genrator</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1>
-                Generate Strong Password
-            </h1>
-            <input 
-            type="text"
-            placeholder="click the button to generate password"
-            id="display-password"
-            />
-            <div class="generate-container">
-                <select name="passwordLength" id="password-length">
-                    <option value="0" selected disabled>Select Length</option>
-                    <option value="4">4</option>
-                    <option value="6">6</option>
-                    <option value="8">8</option>
-                    <option value="10">10</option>
-                    <option value="12">12</option>
-                    <option value="16">16</option>
-                    <option value="20">20</option>
-                    <option value="30">300</option>
-                </select>
-                <button onClick="randomPassword()">Generate Password</button>
-            </div>
-            <p id="error-info"></p>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="password-box">
+            <input type="text" id="display-password" placeholder="Click Generated Password" />
+            <i class="uil uil-copy copy-icon"></i>
         </div>
-    </body>
+        <div class="range-box">
+            <input type="range" id="password-length" min="4" max="30" />
+            <span class="slider-number"></span>
+        </div>
+        <button onClick="randomPassword()" class="generate-button">
+            Generate Password
+        </button>
+    </div>
+    </div>
+    <p id="error-info"></p>
+    </div>
+</body>
+
 </html>

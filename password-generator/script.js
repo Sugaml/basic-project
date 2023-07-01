@@ -1,6 +1,7 @@
 function randomPassword(){
     let displayPassword=document.getElementById('display-password');
     let passwordLength=document.getElementById('password-length').value;
+    
     let error=document.getElementById('error-info');
     let password='';
     let characters='0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXY'
